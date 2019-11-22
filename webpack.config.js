@@ -1,6 +1,9 @@
 const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
+const ResourceHintWebpackPlugin = require('resource-hints-webpack-plugin');
+const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const config = {
@@ -81,7 +84,29 @@ const config = {
         new HtmlWebpackPlugin({
             template: './src/index.html', // require('html-webpack-template'),
             // inject: false,
-            appMountId: 'app',
+        }),
+        new ResourceHintWebpackPlugin(),
+        new ScriptExtHtmlWebpackPlugin({
+            defaultAttribute: 'async'
+        }),
+        new FaviconsWebpackPlugin({
+            logo: './src/images/logo.png', // svg works too!
+            mode: 'webapp', // optional can be 'webapp' or 'light' - 'webapp' by default
+            devMode: 'webapp', // optional can be 'webapp' or 'light' - 'light' by default 
+            cache: true,
+            inject: true,
+            favicons: {
+                appName: 'my-app',
+                appDescription: 'My awesome App',
+                developerName: 'Me',
+                developerURL: null, // prevent retrieving from the nearest package.json
+                background: '#ddd',
+                theme_color: '#333',
+                icons: {
+                    coast: false,
+                    yandex: false
+                }
+            }
         }),
         new MiniCssExtractPlugin({
             filename: `[name].css`,
