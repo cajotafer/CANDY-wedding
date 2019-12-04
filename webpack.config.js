@@ -96,12 +96,12 @@ const config = {
             cache: true,
             inject: true,
             favicons: {
-                appName: 'my-app',
-                appDescription: 'My awesome App',
-                developerName: 'Me',
+                appName: 'CANDY-wedding',
+                appDescription: 'La boda de Carlos y Dyah',
+                developerName: 'Cajotafer',
                 developerURL: null, // prevent retrieving from the nearest package.json
-                background: '#ddd',
-                theme_color: '#333',
+                background: '#ccc',
+                theme_color: '#ccc',
                 icons: {
                     coast: false,
                     yandex: false
