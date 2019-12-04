@@ -1,0 +1,40 @@
+<script>
+    import { fly } from 'svelte/transition';
+    import { quintOut } from 'svelte/easing';
+</script>
+
+<h2 class="primary-font" in:fly="{{delay: 500, duration: 1000, y: 50, opacity: 0, easing: quintOut}}">La
+    Boda <br>de<br> <span class="secondary-font">CANDY</span></h2>
+<h1 in:fly="{{delay: 750, duration: 1000, y: 50, opacity: 0, easing: quintOut}}">Carlos & Dyah</h1>
+
+<style lang="scss">
+    h1 {
+        font-size: 1.4em;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        margin-top: -15px;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+    }
+
+    span {
+        font-size: 1.9em;
+    }
+
+    @media screen and (min-width: 768px) {
+        h2 {
+            font-size: 3.4em;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+    }
+</style>
