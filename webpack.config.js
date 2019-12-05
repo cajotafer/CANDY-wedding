@@ -7,7 +7,10 @@ const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const config = {
-    entry: './src/index.js',
+    entry: {
+        index: './src/index.js',
+        comments: './src/js/pages/comments.js'
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[contenthash].js'
@@ -83,6 +86,17 @@ const config = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html', // require('html-webpack-template'),
+            excludeChunks: ['comments'],
+            title: 'La boda de Carlos y Dyah',
+            minify: true
+            // inject: false,
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/index.html', // require('html-webpack-template'),
+            filename: 'comentarios/comments.html',
+            excludeChunks: ['index'],
+            title: 'Libro de visitas',
+            minify: true
             // inject: false,
         }),
         new ResourceHintWebpackPlugin(),

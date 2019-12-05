@@ -37,45 +37,58 @@
 
 </script>
 
-<h3 class="primary-font">{itsTime ? '¡Es la hora!' : 'Faltan'}</h3>
 {#if itsTime}
-    <h3 class="primary-font">02.02.20</h3>
-    <Button text="VER EL DIRECTO" disabled={!itsTime}/>
+    <h3 class="its-time">¡Es la hora!</h3>
+    <Button text="Ver la transmisión en directo" disabled={!itsTime}/>
 {:else}
+    <h3 class="primary-font">Faltan</h3>
     <h2>{daysLeft()}<small>D</small> : {hoursLeft()}<small>H</small> :
         {minutesLeft(currentDate)}<small>M</small></h2>
-            <!-- Button code -->
-    <div title="Agregar al Calendario" class="addeventatc" role="button">
-        Agregar al Calendario
-        <span class="start">02/02/2020 08:00 AM</span>
-        <span class="end">02/02/2020 12:00 PM</span>
-        <span class="timezone">WIB</span>
-        <span class="title">Boda de Carlos y Dyah</span>
-        <span class="description">Transmisión en vivo de la boda de Carlos y Dyah desde Indonesia. Evento exclusivo para
-            familiares y amigos.</span>
-        <span class="location">Gresik, East Java, Indonesia</span>
+    <div class="btn-container">
+        <div title="Agregar al Calendario" class="addeventatc" role="button">
+            Agregar al Calendario
+            <span class="start">02/02/2020 08:00 AM</span>
+            <span class="end">02/02/2020 12:00 PM</span>
+            <span class="timezone">WIB</span>
+            <span class="title">Boda de Carlos y Dyah</span>
+            <span class="description">Transmisión en vivo de la boda de Carlos y Dyah desde Indonesia. Evento exclusivo para
+                familiares y amigos.</span>
+            <span class="location">Gresik, East Java, Indonesia</span>
+        </div>
+        <Button text="Libro de visitas" href="/comentarios/comments.html" />
     </div>
 {/if}
 
 <style lang="scss">
      @import '../../css/colors.scss';
 
+    .its-time { 
+    margin-bottom: 10px;
+    }
+
     h3 {
         font-size: 2.4em;
         font-weight: normal;
-
     }
 
     h2 {
         font-size: 2.2em;
         letter-spacing: 0.1em;
         font-weight: normal;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+    }
+
+    .btn-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
     }
 
     .addeventatc {
         color: $grey !important;
         padding: 13px 12px 12px 13px;   
+        margin-bottom: 10px;
 
         &:hover {
             color: $color-primary !important;
@@ -93,6 +106,10 @@
 
         h3 {
             font-size: 3em;
+        }
+
+        .btn-container {
+            flex-direction: initial;
         }
     }
 </style>

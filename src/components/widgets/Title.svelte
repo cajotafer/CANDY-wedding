@@ -1,9 +1,10 @@
 <script>
     import { fly } from 'svelte/transition';
     import { quintOut } from 'svelte/easing';
+    export let text;
 </script>
 
-<h2 in:fly="{{delay: 250, duration: 1000, y: 50, opacity: 0, easing: quintOut}}">02/02/20</h2>
+<h2 in:fly="{{delay: 250, duration: 1000, y: 50, opacity: 0, easing: quintOut}}">{text}</h2>
 
 <style lang="scss">
     h2 {

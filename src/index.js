@@ -1,7 +1,7 @@
 import './css/global.scss';
-import App from './components/layouts/App.svelte';
+import Landing from './components/pages/Landing.svelte';
 
-const app = new App({
+const app = new Landing({
 	target: document.body,
 	intro: true,
 	props: {

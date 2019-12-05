@@ -67,6 +67,7 @@
         -webkit-tap-highlight-color: rgba(0,0,0,0);
         box-shadow: 0 0 0 0.5px rgba(50,50,93,.17), 0 2px 5px 0 rgba(50,50,93,.1), 0 1px 1.5px 0 rgba(0,0,0,.07), 0 1px 2px 0 rgba(0,0,0,.08), 0 0 0 0 transparent!important;
         color: $grey !important;
+        margin-bottom: 10px;
 
             &:hover {
                 color: $color-primary !important;
