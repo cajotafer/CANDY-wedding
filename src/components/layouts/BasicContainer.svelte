@@ -26,7 +26,7 @@
 
 <style lang="scss">
     .container {
-        padding: 20vh 40px;
+        padding: 15vh 40px;
         height: auto;
         width: 100%;
         display: flex;

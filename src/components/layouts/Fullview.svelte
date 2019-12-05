@@ -33,5 +33,6 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        position: relative;
     }
 </style>

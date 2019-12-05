@@ -24,13 +24,14 @@
 
     .addeventatc {
         position: fixed;
-        bottom: 50px;
+        bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
         width: fit-content;
         color: $grey !important;
         padding: 13px 12px 12px 13px;
         margin-bottom: 10px;
+        z-index: 20;
 
         &:hover {
             color: $color-primary !important;

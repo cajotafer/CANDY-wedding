@@ -11,6 +11,7 @@
         width: 100%;
         height: 15vh;
         position: fixed;
+        z-index: 10;
     }
 
     .shadow--top {
