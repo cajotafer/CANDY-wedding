@@ -1,11 +1,12 @@
 <script></script>
 
 <form name="comment" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+    <input type="hidden" name="form-name" value="comment" />
     <p>
-        <label>Nombre: <input type="text" name="name" placeholder="Pepito Pérez" /></label>
+        <label>Nombre: <input type="text" name="name" /></label>
     </p>
     <p>
-        <label>Correo electrónico: <input type="email" name="email" placeholder="correo@ejemplo.com" /></label>
+        <label>Correo electrónico: <input type="email" name="email" /></label>
     </p>
     <p>
         <label>Relación: <select name="role[]" multiple>
@@ -14,8 +15,7 @@
             </select></label>
     </p>
     <p>
-        <label>Mensaje: <textarea name="message"
-                placeholder="Escribe el mensaje que quieres enviar a Carlos y Dyah."></textarea></label>
+        <label>Mensaje: <textarea name="message"></textarea></label>
     </p>
     <div data-netlify-recaptcha="true">
     </div>

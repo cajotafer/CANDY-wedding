@@ -93,7 +93,7 @@ const config = {
         }),
         new HtmlWebpackPlugin({
             template: './src/index.html', // require('html-webpack-template'),
-            filename: 'comentarios/comments.html',
+            filename: 'comentarios.html',
             excludeChunks: ['index'],
             title: 'Libro de visitas',
             minify: true
