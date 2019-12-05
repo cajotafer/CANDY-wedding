@@ -55,7 +55,7 @@
                 familiares y amigos.</span>
             <span class="location">Gresik, East Java, Indonesia</span>
         </div>
-        <Button text="Libro de visitas" href="/comentarios.html" />
+        <Button text="Libro de visitas" href="/comentarios" />
     </div>
 {/if}
 
