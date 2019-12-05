@@ -2,6 +2,7 @@
 	import Shadows from '../widgets/Shadows.svelte'
 	import Arrow from '../widgets/Arrow.svelte'
 	import Title from '../widgets/Title.svelte'
+	import CallToAction from '../widgets/CallToAction.svelte'
 	import Fullview from '../layouts/Fullview.svelte'
 	import BasicContainer from '../layouts/BasicContainer.svelte'
 	import Hero from '../widgets/Hero.svelte'
@@ -15,6 +16,7 @@
 <Shadows />
 <Arrow />
 <Title text='02/02/20' />
+<CallToAction />
 
 <Fullview main>
 	<Hero />

@@ -45,16 +45,6 @@
     <h2>{daysLeft()}<small>D</small> : {hoursLeft()}<small>H</small> :
         {minutesLeft(currentDate)}<small>M</small></h2>
     <div class="btn-container">
-        <div title="Agregar al Calendario" class="addeventatc" role="button">
-            Agregar al Calendario
-            <span class="start">02/02/2020 08:00 AM</span>
-            <span class="end">02/02/2020 12:00 PM</span>
-            <span class="timezone">WIB</span>
-            <span class="title">Boda de Carlos y Dyah</span>
-            <span class="description">Transmisión en vivo de la boda de Carlos y Dyah desde Indonesia. Evento exclusivo para
-                familiares y amigos.</span>
-            <span class="location">Gresik, East Java, Indonesia</span>
-        </div>
         <Button text="Libro de visitas" href="/comentarios" />
     </div>
 {/if}
