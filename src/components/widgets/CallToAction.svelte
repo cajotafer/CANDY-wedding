@@ -1,5 +1,13 @@
 <script>
-    if (typeof window !== 'undefined') {
+    import { itsTime } from '../../js/utils/stores.js';
+
+    let itsTimeValue;
+
+    const unsubscribe = itsTime.subscribe(value => {
+        itsTimeValue = value;
+    });
+
+    if (!itsTimeValue && typeof window !== 'undefined') {
         window.addeventasync = function () {
             addeventatc.settings({
                 dropdown: { order: "appleical,google,outlookcom" },
@@ -8,16 +16,20 @@
     }
 </script>
 
-<div title="Agregar al Calendario" class="addeventatc" role="button" data-dropdown-y="up">
-    Agregar al Calendario
-    <span class="start">02/02/2020 01:00 AM</span>
-    <span class="end">02/02/2020 05:00 AM</span>
-    <span class="timezone">GMT</span>
-    <span class="title">Boda de Carlos y Dyah</span>
-    <span class="description">Transmisión en vivo de la boda de Carlos y Dyah desde Indonesia. Evento exclusivo para
-        familiares y amigos.</span>
-    <span class="location">Gresik, East Java, Indonesia</span>
-</div>
+{#if itsTimeValue}
+    <Button text="Ver la transmisión en directo" disabled={!itsTimeValue} />
+{:else}
+    <div title="Agregar al Calendario" class="addeventatc" role="button" data-dropdown-y="up">
+        Agregar al Calendario
+        <span class="start">02/02/2020 01:00 AM</span>
+        <span class="end">02/02/2020 05:00 AM</span>
+        <span class="timezone">GMT</span>
+        <span class="title">Boda de Carlos y Dyah</span>
+        <span class="description">Transmisión en vivo de la boda de Carlos y Dyah desde Indonesia. Evento exclusivo para
+            familiares y amigos.</span>
+        <span class="location">Gresik, East Java, Indonesia</span>
+    </div>
+{/if}
 
 <style lang="scss">
     @import '../../css/colors.scss';

@@ -1,17 +1,24 @@
 <script>
+    import { itsTime } from '../../js/utils/stores.js';
+
     import Fullview from '../layouts/Fullview.svelte'
     import Button from './Button.svelte'
 
     let date = new Date(Date.UTC(2020, 1, 2, 1))
     let currentDate = new Date()
-    let itsTime = false;
+
+    let itsTimeValue;
+
+    const unsubscribe = itsTime.subscribe(value => {
+        itsTimeValue = value;
+    });
 
     if (date.getTime() > currentDate.getTime()) {
         window.setInterval(function () {
             currentDate = new Date()
         }, 60000);
     } else {
-        itsTime = true;
+        itsTime.set(true);
     }
 
     const daysLeft = () => {
@@ -37,9 +44,8 @@
 
 </script>
 
-{#if itsTime}
+{#if itsTimeValue}
     <h3 class="its-time">¡Es la hora!</h3>
-    <Button text="Ver la transmisión en directo" disabled={!itsTime}/>
 {:else}
     <h3 class="primary-font">Faltan</h3>
     <h2>{daysLeft()}<small>D</small> : {hoursLeft()}<small>H</small> :
