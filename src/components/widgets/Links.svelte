@@ -6,7 +6,7 @@
 
 <div>
     <Button text="Galería" />
-    <Button text="Libro de visitas" href="/comentarios/comments.html" />
+    <Button text="Libro de visitas" href="/comentarios.html" />
     <Button text="Videos en smule" href="https://www.smule.com/Polarchoo/favorites" />
 </div>
 <address>

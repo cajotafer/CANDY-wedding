@@ -16,27 +16,11 @@
 </head>
 
 <body class="secondary-font">
-	<form name="comment" data-netlify="true" data-netlify-recaptcha="true" hidden>
-		<p>
-			<label>Nombre: <input type="text" name="name" /></label>
-		</p>
-		<p>
-			<label>Correo electrónico: <input type="email" name="email" /></label>
-		</p>
-		<p>
-			<label>Relación: <select name="role[]" multiple>
-					<option value="family">Familia</option>
-					<option value="friend">Amistad</option>
-				</select></label>
-		</p>
-		<p>
-			<label>Mensaje: <textarea name="message"></textarea></label>
-		</p>
-		<div data-netlify-recaptcha="true">
-		</div>
-		<p>
-			<button type="submit">Enviar</button>
-		</p>
+	<form name="comments" data-netlify="true" data-netlify-recaptcha="true" hidden>
+		<label>Nombre: <input type="text" name="name" /></label>
+		<label>Correo electrónico: <input type="email" name="email" /></label>
+		<label>Mensaje: <textarea name="message"></textarea></label>
+		<div data-netlify-recaptcha="true" hidden></div>
 	</form>
 	<script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" defer></script>
 </body>
