@@ -9,12 +9,6 @@
         <label>Correo electrónico: <input type="email" name="email" /></label>
     </p>
     <p>
-        <label>Relación: <select name="role[]" multiple>
-                <option value="family">Familia</option>
-                <option value="friend">Amistad</option>
-            </select></label>
-    </p>
-    <p>
         <label>Mensaje: <textarea name="message"></textarea></label>
     </p>
     <div data-netlify-recaptcha="true">
