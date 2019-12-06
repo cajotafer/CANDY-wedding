@@ -16,33 +16,6 @@
 <style lang="scss">
     @import '../../css/colors.scss';
 
-    /* a {
-        padding: 8px 16px;
-        border-radius: 4px;
-        letter-spacing: 0.1em;
-        font-size: 0.8em;
-        cursor: pointer;
-        background: linear-gradient(60deg, #d69b00 0%, #a57a00 36%, #715500 98%);
-        color: $white;
-        transition: .3s;
-    }
-
-    a:hover, a:focus {
-        box-shadow: 0px 4px 15px 0px rgba(20, 20, 20, 0.25);
-    }
-
-    a:active {
-        padding: 6px 12px;
-        margin: 2px 4px;
-        box-shadow: initial;
-    }
-
-    .outline {
-        background: transparent;
-        color: $color-primary;
-        border: 1px solid $color-primary;
-    }*/
-
     .disabled {
         opacity: 0.3;
         cursor: initial;
@@ -61,7 +34,7 @@
         border-radius: 3px;
         cursor: pointer;
         -webkit-font-smoothing: antialiased!important;
-        outline-color: rgba(0,78,255,0.5);
+        outline-color: rgb(162, 113, 0.5);
         text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
         -webkit-user-select: none;
         -webkit-tap-highlight-color: rgba(0,0,0,0);

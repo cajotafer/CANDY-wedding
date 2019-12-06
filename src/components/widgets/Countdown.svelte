@@ -81,20 +81,6 @@
         flex-direction: column;
     }
 
-    .addeventatc {
-        color: $grey !important;
-        padding: 13px 12px 12px 13px;   
-        margin-bottom: 10px;
-
-        &:hover {
-            color: $color-primary !important;
-        } 
-    }
-
-    :global(.addeventatc_icon.atc_node.notranslate){
-        display: none !important;
-    }  
-
     @media screen and (min-width: 768px) {
         h2 {
             font-size: 3.4em;

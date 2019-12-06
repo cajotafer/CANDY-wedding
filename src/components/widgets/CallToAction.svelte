@@ -44,6 +44,7 @@
         padding: 13px 12px 12px 13px;
         margin-bottom: 10px;
         z-index: 20;
+        outline-color: rgb(162, 113, 0.5);
 
         &:hover {
             color: $color-primary !important;
