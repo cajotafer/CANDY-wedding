@@ -21,12 +21,18 @@
 {:else}
     <div title="Agregar al Calendario" class="addeventatc" role="button" data-dropdown-y="up">
         Agregar al Calendario
-        <span class="start">02/02/2020 01:00 AM</span>
-        <span class="end">02/02/2020 05:00 AM</span>
-        <span class="timezone">GMT</span>
+        <span class="start">02/01/2020 08:00 PM</span>
+        <span class="end">02/02/2020 12:00 AM</span>
+        <span class="timezone">America/Bogota</span>
         <span class="title">Boda de Carlos y Dyah</span>
-        <span class="description">Transmisión en vivo de la boda de Carlos y Dyah desde Indonesia. Evento exclusivo para
-            familiares y amigos.</span>
+        <span class="description">
+            Transmisión en vivo de la boda de Carlos y Dyah desde Indonesia. Evento exclusivo para
+            familiares y amigos.
+            <br/>
+            <br/>08:00 PM - Perú / Colombia / Ecuador
+            <br/>09:00 PM - Venezuela
+            <br/>02:00 AM - España
+        </span>
         <span class="location">Gresik, East Java, Indonesia</span>
     </div>
 {/if}
