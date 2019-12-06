@@ -62,7 +62,7 @@
         display: none !important;
     }
 
-    @media screen and (min-height: 568px) {
+    @media screen and (min-height: 640px) {
         .addeventatc {
             right: initial;
             font-size: .9em;
