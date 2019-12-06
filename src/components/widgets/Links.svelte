@@ -28,7 +28,7 @@
         margin-bottom: 20px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 568px) {
         h2 {
             font-size: 2em;
         }

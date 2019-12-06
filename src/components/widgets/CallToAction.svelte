@@ -43,14 +43,15 @@
     .addeventatc {
         position: fixed;
         bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
+        right: 0;
+        transform: translateX(-20%);
         width: fit-content;
         color: $grey !important;
         padding: 13px 12px 12px 13px;
         margin-bottom: 10px;
         z-index: 20;
         outline-color: rgb(162, 113, 0.5);
+        font-size: .8em;
 
         &:hover {
             color: $color-primary !important;
@@ -59,5 +60,14 @@
 
     :global(.addeventatc_icon.atc_node.notranslate) {
         display: none !important;
+    }
+
+    @media screen and (min-height: 568px) {
+        .addeventatc {
+            right: initial;
+            font-size: .9em;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 </style>
