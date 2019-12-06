@@ -28,6 +28,7 @@
     .container {
         padding: 20px;
         height: 100vh;
+        min-height: 480px;
         width: 100%;
         display: flex;
         justify-content: center;
