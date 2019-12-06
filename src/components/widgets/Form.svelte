@@ -1,7 +1,7 @@
 <script></script>
 
-<form name="comment" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="comment" />
+<form name="visits" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="visits" />
 
     <div>
         <div class="input-wrap">

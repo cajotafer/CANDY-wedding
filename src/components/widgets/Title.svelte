@@ -18,5 +18,6 @@
         transform: translateX(-50%);
         letter-spacing: 0.2em;
         z-index: 20;
+        width: fit-content;
     }
 </style>
