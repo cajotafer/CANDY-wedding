@@ -21,7 +21,7 @@
         cursor: initial;
     } 
 
-    a {
+    a, :global(button, .call-to-action) {
         display: inline-block;
         font-family: "Open Sans",Roboto,"Helvetica Neue",Helvetica,Optima,Segoe,"Segoe UI",Candara,Calibri,Arial,sans-serif;
         font-weight: 600;

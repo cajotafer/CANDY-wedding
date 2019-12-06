@@ -1,5 +1,6 @@
 <script>
     import { itsTime } from '../../js/utils/stores.js';
+    import Button from './Button.svelte'
 
     let itsTimeValue;
 
@@ -17,7 +18,7 @@
 </script>
 
 {#if itsTimeValue}
-    <Button text="Ver la transmisión en directo" disabled={!itsTimeValue} />
+    <a role="button" class="call-to-action" tabindex="1">Ver la transmisión en directo</a>  
 {:else}
     <div title="Agregar al Calendario" class="addeventatc" role="button" data-dropdown-y="up">
         Agregar al Calendario
@@ -40,18 +41,17 @@
 <style lang="scss">
     @import '../../css/colors.scss';
 
-    .addeventatc {
+    .addeventatc, .call-to-action {
         position: fixed;
         bottom: 20px;
-        right: 0;
-        transform: translateX(-20%);
+        left: 50%;
+        transform: translateX(-50%);
         width: fit-content;
         color: $grey !important;
         padding: 13px 12px 12px 13px;
         margin-bottom: 10px;
         z-index: 20;
         outline-color: rgb(162, 113, 0.5);
-        font-size: .8em;
 
         &:hover {
             color: $color-primary !important;
@@ -62,12 +62,12 @@
         display: none !important;
     }
 
-    @media screen and (min-height: 640px) {
-        .addeventatc {
-            right: initial;
-            font-size: .9em;
-            left: 50%;
-            transform: translateX(-50%);
+    @media only screen and (orientation: landscape) and (max-height: 640px) {
+        .addeventatc, .call-to-action {
+            left: initial;
+            right: 0;
+            transform: translateX(-20%);
+            font-size: .8em;
         }
     }
 </style>
