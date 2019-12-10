@@ -9,8 +9,6 @@
 	import Countdown from '../widgets/Countdown.svelte'
 	import Resume from '../widgets/Resume.svelte'
 	import Links from '../widgets/Links.svelte'
-
-	export let name;
 </script>
 
 <Shadows />

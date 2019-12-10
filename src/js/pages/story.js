@@ -1,7 +1,7 @@
 import "../../css/global.scss";
-import Comments from "../../components/pages/Comments.svelte";
+import Story from "../../components/pages/Story.svelte";
 
-const comments = new Comments({
+const story = new Story({
   target: document.body,
   intro: true
   /* props: {
@@ -9,4 +9,4 @@ const comments = new Comments({
     } */
 });
 
-export default comments;
+export default story;
