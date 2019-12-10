@@ -5,7 +5,7 @@
 <h2>Otros enlaces</h2>
 
 <div>
-    <Button text="Galería" />
+    <Button text="Galería" href="/galeria"/>
     <Button text="Libro de visitas" href="/comentarios" />
     <Button text="Videos en smule" href="https://www.smule.com/Polarchoo/favorites" />
 </div>

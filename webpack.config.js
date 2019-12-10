@@ -10,7 +10,8 @@ const config = {
   entry: {
     index: "./src/index.js",
     comments: "./src/js/pages/comments.js",
-    story: "./src/js/pages/story.js"
+    story: "./src/js/pages/story.js",
+    gallery: "./src/js/pages/gallery.js"
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -83,7 +84,7 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html", // require('html-webpack-template'),
-      excludeChunks: ["comments", "story"],
+      excludeChunks: ["comments", "story", "gallery"],
       title: "La boda de Carlos y Dyah",
       minify: true
       // inject: false,
@@ -91,7 +92,7 @@ const config = {
     new HtmlWebpackPlugin({
       template: "./src/index.html", // require('html-webpack-template'),
       filename: "comentarios.html",
-      excludeChunks: ["index", "story"],
+      excludeChunks: ["index", "story", "gallery"],
       title: "Libro de visitas",
       minify: true
       // inject: false,
@@ -99,8 +100,16 @@ const config = {
     new HtmlWebpackPlugin({
       template: "./src/index.html", // require('html-webpack-template'),
       filename: "historia.html",
-      excludeChunks: ["index", "comments"],
+      excludeChunks: ["index", "comments", "gallery"],
       title: "Historia",
+      minify: true
+      // inject: false,
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/index.html", // require('html-webpack-template'),
+      filename: "galeria.html",
+      excludeChunks: ["index", "comments", "story"],
+      title: "Galería",
       minify: true
       // inject: false,
     }),
