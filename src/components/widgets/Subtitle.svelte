@@ -1,8 +1,9 @@
 <script>
   export let text = "";
+  export let primaryFont = false;
 </script>
 
-<h2>{@html text}</h2>
+<h2 class:primary-font="{primaryFont}">{@html text}</h2>
 
 <style lang="scss">
   h2 {
