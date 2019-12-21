@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-<head>
-	<meta charset='utf-8'>
-	<meta name='viewport' content='width=device-width,initial-scale=1'>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta
+      name="description"
+      content="La boda de Carlos y Dyah se acerca. Mira los detalles del evento, interactúa y únete a la transmisión en vivo."
+    />
+    <meta name="keywords" content="boda, matrimonio, pareja, amor" />
 
-	<title><%= htmlWebpackPlugin.options.title %></title>
-	<meta name="description"
-		content="La boda de Carlos y Dyah se acerca. Mira los detalles del evento, interactúa y únete a la transmisión en vivo.">
-	<meta name="keywords" content="boda, matrimonio, pareja, amor">
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abhaya+Libre:400,700|Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-	<link rel='icon' type='image/png' href='/favicon.png'>
-	<link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:400,700|Great+Vibes&display=swap" rel="stylesheet">
-
-</head>
-
-<body class="secondary-font">
-	<form name="visits" data-netlify="true" hidden>
-		<input type="text" name="name" />
-		<input type="email" name="email" />
-		<textarea name="message"></textarea>
-	</form>
-	<script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" defer></script>
-</body>
-
+  <body class="secondary-font">
+    <form name="visits" data-netlify="true" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
+  </body>
 </html>

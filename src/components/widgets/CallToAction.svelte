@@ -1,29 +1,46 @@
 <script>
-  import { itsTime } from "../../js/utils/stores.js";
+  import { itsTime, addedToCalendar } from "../../js/utils/stores.js";
   import Button from "./Button.svelte";
 
-  let itsTimeValue;
-
-  const unsubscribe = itsTime.subscribe(value => {
-    itsTimeValue = value;
-  });
-
-  if (!itsTimeValue && typeof window !== "undefined") {
+  function addeventconfig() {
     window.addeventasync = function() {
       addeventatc.settings({
         dropdown: { order: "appleical,google,outlookcom" }
+      });
+      addeventatc.register("button-dropdown-click", function(obj) {
+        addedToCalendar.set(true);
+        console.log(
+          "button-dropdown-click -> " + obj.id + ", service -> " + obj.service
+        );
       });
     };
   }
 </script>
 
-{#if itsTimeValue}
+<svelte:window on:load="{addeventconfig}" />
+<svelte:head>
+  {#if !$itsTime}
+  <script
+    type="text/javascript"
+    src="https://addevent.com/libs/atc/1.6.1/atc.min.js"
+    defer
+  ></script>
+  {/if}
+</svelte:head>
+
+{#if $itsTime}
 <a
   href="https://youtu.be/ur6Keb67phg"
   role="button"
   class="call-to-action"
   tabindex="0"
+  target="_blank"
+  rel="noreferrer noopener"
   >Ver la transmisión en directo</a
+>
+{:else if $addedToCalendar}
+<a href="/comentarios" role="button" class="call-to-action" tabindex="0"
+  >Libro de visitas</a
 >
 {:else}
 <div
@@ -33,18 +50,18 @@
   data-dropdown-y="up"
 >
   Agregar al Calendario
-  <span class="start">02/01/2020 08:00 PM</span>
-  <span class="end">02/02/2020 12:00 AM</span>
-  <span class="timezone">America/Bogota</span>
-  <span class="title">Boda de Carlos y Dyah</span>
-  <span class="description">
+  <span class="start" hidden>02/01/2020 08:00 PM</span>
+  <span class="end" hidden>02/02/2020 12:00 AM</span>
+  <span class="timezone" hidden>America/Bogota</span>
+  <span class="title" hidden>Boda de Carlos y Dyah</span>
+  <span class="description" hidden>
     Transmisión en vivo de la boda de Carlos y Dyah desde Indonesia. Evento
     exclusivo para familiares y amigos.
     <br />
     <br />08:00 PM - Perú / Colombia / Ecuador <br />09:00 PM - Venezuela
     <br />02:00 AM - España
   </span>
-  <span class="location">Gresik, East Java, Indonesia</span>
+  <span class="location" hidden>Gresik, East Java, Indonesia</span>
 </div>
 {/if}
 
@@ -69,6 +86,10 @@
     }
   }
 
+  a#addeventatc1-home {
+    color: white !important;
+  }
+
   :global(.addeventatc_icon.atc_node.notranslate) {
     display: none !important;
   }
@@ -80,6 +101,10 @@
       right: 0;
       transform: translateX(-20%);
       font-size: 0.8em;
+
+      &:hover {
+        font-size: 0.8em;
+      }
     }
   }
 </style>

@@ -7,12 +7,6 @@
     let date = new Date(Date.UTC(2020, 1, 2, 1))
     let currentDate = new Date()
 
-    let itsTimeValue;
-
-    const unsubscribe = itsTime.subscribe(value => {
-        itsTimeValue = value;
-    });
-
     if (date.getTime() > currentDate.getTime()) {
         window.setInterval(function () {
             currentDate = new Date()
@@ -44,7 +38,7 @@
 
 </script>
 
-{#if itsTimeValue}
+{#if $itsTime}
     <h3 class="its-time">¡Es la hora!</h3>
 {:else}
     <h3 class="primary-font">Faltan</h3>
