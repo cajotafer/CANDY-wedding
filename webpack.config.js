@@ -69,9 +69,12 @@ const config = {
         test: /\.png$/,
         use: [
           {
-            loader: "url-loader",
+            loader: "file-loader",
             options: {
-              mimetype: "image/png"
+              mimetype: "image/png",
+              publicPath: "/dist/",
+              name: "/assets/[name].[ext]"
+              // emitFile: true
             }
           }
         ]
@@ -127,7 +130,7 @@ const config = {
         appName: "CANDY-wedding",
         appDescription: "La boda de Carlos y Dyah",
         developerName: "Cajotafer",
-        developerURL: null, // prevent retrieving from the nearest package.json
+        developerURL: "https://cajotafer.com",
         background: "#ccc",
         theme_color: "#ccc",
         icons: {

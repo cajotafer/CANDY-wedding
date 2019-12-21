@@ -86,10 +86,6 @@
     }
   }
 
-  a#addeventatc1-home {
-    color: white !important;
-  }
-
   :global(.addeventatc_icon.atc_node.notranslate) {
     display: none !important;
   }
