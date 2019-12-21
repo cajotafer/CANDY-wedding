@@ -127,7 +127,7 @@ const config = {
       cache: true,
       inject: true,
       favicons: {
-        appName: "CANDY-wedding",
+        appName: "candy-boda",
         appDescription: "La boda de Carlos y Dyah",
         developerName: "Cajotafer",
         developerURL: "https://cajotafer.com",
