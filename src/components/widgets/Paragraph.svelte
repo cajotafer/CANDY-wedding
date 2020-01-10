@@ -1,8 +1,9 @@
 <script>
   export let text = "";
+  export let center = false;
 </script>
 
-<p>{@html text}</p>
+<p class:center>{@html text}</p>
 
 <style lang="scss">
   p {
@@ -12,6 +13,10 @@
     margin-bottom: 30px;
     // letter-spacing: 0.01em;
     max-width: 480px;
+  }
+
+  .center {
+    text-align: center;
   }
 
   @media screen and (min-width: 768px) {

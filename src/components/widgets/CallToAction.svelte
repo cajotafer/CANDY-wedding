@@ -31,7 +31,6 @@
 {#if $itsTime}
 <a
   href="https://youtu.be/ur6Keb67phg"
-  role="button"
   class="call-to-action"
   tabindex="0"
   target="_blank"
@@ -39,9 +38,7 @@
   >Ver la transmisión en directo</a
 >
 {:else if $addedToCalendar}
-<a href="/comentarios" role="button" class="call-to-action" tabindex="0"
-  >Libro de visitas</a
->
+<a href="/comentarios" class="call-to-action" tabindex="0">Libro de visitas</a>
 {:else}
 <div
   title="Agregar al Calendario"

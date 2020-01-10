@@ -3,6 +3,7 @@
 
     import Fullview from '../layouts/Fullview.svelte'
     import Button from './Button.svelte'
+    import P from './Paragraph.svelte'
 
     let date = new Date(Date.UTC(2020, 1, 2, 1))
     let currentDate = new Date()
@@ -40,6 +41,11 @@
 
 {#if $itsTime}
     <h3 class="its-time">¡Es la hora!</h3>
+    <P text="{`
+        Ya puedes ver la
+        <a href="https://youtu.be/ur6Keb67phg" tabindex="0" target="_blank" rel="noreferrer noopener">
+            transmisión en directo.
+        </a>`}" center></P>
 {:else}
     <h3 class="primary-font">Faltan</h3>
     <h2>{daysLeft()}<small>D</small> : {hoursLeft()}<small>H</small> :

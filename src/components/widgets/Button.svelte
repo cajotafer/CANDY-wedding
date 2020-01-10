@@ -1,22 +1,13 @@
 <script>
   export let text;
   export let href;
-  export let outline = false;
   export let disabled = false;
 </script>
 
-{#if href && text }
-<a {href} class:outline class:disabled aria-disabled="{disabled}" tabindex="0"
-  >{text}</a
->
+{#if href && text && !disabled }
+<a {href} class:disabled aria-disabled="{disabled}" tabindex="0">{text}</a>
 {:else if text}
-<span
-  role="button"
-  class:outline
-  class:disabled
-  aria-disabled="{disabled}"
-  tabindex="0"
->
+<span role="button" class:disabled aria-disabled="{disabled}">
   {text}
 </span>
 {/if}
