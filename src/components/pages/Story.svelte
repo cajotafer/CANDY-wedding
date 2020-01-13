@@ -154,11 +154,65 @@
         Evidentemente no me arrepiento, pero estoy seguro que pude hacerlo de mejor manera, en fin, 
         fue una experiencia más, una de esas que son muy importantes en tu vida.'/>
 
-    <Subtitle text='' primaryFont/>
-    <Paragraph text=''/>
 
-    <Subtitle text='' primaryFont/>
-    <Paragraph text=''/>
+    <Subtitle text='El momento indicado' primaryFont/>
+    <Paragraph text='Pasaron unos pocos días hasta que recibí una llamada para una entrevista. 
+        Me sentí con confianza y al mismo tiempo estaba prevenido, las cosas no podrían salir siempre 
+        tan bien, vamos, hay hechos que lo respaldan. Esa entrevista se convirtió en una segunda 
+        entrevista donde conocí a dos personas con una humildad y solidaridad que me engancharon 
+        (aún hoy me sorprende como siempre he estado rodeado de este tipo de personas en mi vida). 
+        Tan sólo dos días después ya estaba celebrando con Dee por llamada. Había conseguido el 
+        trabajo que hasta ese momento nos acercaba un paso más a nuestros objetivos.'/>
+    <Paragraph text='Empecé a prestar servicios para Grupo El Comercio, me convertí en miembro de 
+        un equipo increíble que cada vez fue creciendo más y más. He hecho excelentes amistades, 
+        he aprendido muchísimas cosas nuevas y perfeccionado otras, profesionalmente ha sido un 
+        punto de inflexión para mí y significó mucho tener la oportunidad en el momento indicado.'/>
+    <Paragraph text='El tercer objetivo era un hecho y básicamente faltaba planificar los siguientes 
+        pasos y tener paciencia. Luego de casi un año las condiciones estaban dadas y debíamos 
+        hacer que funcionara tan pronto fuera posible, así que llegó el momento de organizar 
+        documentos y otros requisitos para la obtención de la visa, preparar la partida, la 
+        llegada y los próximos pasos. Al parecer estas cosas se nos dieron bastante bien, considero 
+        que es algo importante, planificar estoy seguro que fue una de las cosas que nos ayudó 
+        abriendo algunas puertas.'/>
+
+
+    <Subtitle text='El fin del comienzo' primaryFont/>
+    <Paragraph text='Otra despedida luego de un año. Todo estaba listo, nos tomó tiempo preparar 
+        lo necesario para el último y más largo tramo que nos permitiría estar juntos. Dee 
+        movió cielo y tierra para que la solicitud de la visa estuviera conforme y así fue. 
+        Admito que esta despedida fue menos sentimental pero ciertamente fuera a donde fuera me 
+        llevaría una parte de Perú y las personas fenomenales que ahí conocí, que se convirtieron 
+        en mi familia y amigos, que me ayudaron, estuvieron ahí en buenos y no tan buenos momentos. 
+        Sinceramente fue una nueva apertura de corazón.'/>
+    <Paragraph text='El plan era claro, la primera parada sería Colombia, necesitaba compartir 
+        con las personas que más amo antes de irme tan lejos y seguramente por un largo tiempo. 
+        Luego de Colombia el trayecto seguía hacia Alemania y Singapur para terminar en Indonesia.'/>
+    <Paragraph text='En Colombia esta vez el tiempo fue aún más corto. Tuve la oportunidad de 
+        compartir pocos días con las personas que guardo en la parte más profunda de mi corazón 
+        y realmente fue reparador y alentador, me hizo seguir adelante, si, con nostalgia pero con 
+        una inmensa felicidad y tranquilidad en mi interior.'/>
+    <Paragraph text='Finalmente luego de unas 45 horas de viaje desde Bogotá, nos encontramos por 
+        primera vez, por primera vez sentiamos un caluroso abrazo y percibíamos el aroma del otro 
+        (no había ducha en el avión pero tenía mucho perfume). Ha sido un momento único, por el que 
+        trabajamos y esperamos mucho tiempo, que algunos veían como imposible pero hoy es más real 
+        que nunca.'/>
+    <Paragraph text='Era simplemente el fin del comienzo, la primera temporada de la serie, el cierre 
+        del primer inning. Se avecinaba un futuro completamente nuevo, arriesgado pero con altas 
+        probabilidades de felicidad.'/>
+
+
+    <Subtitle text='Para tí' primaryFont/>
+    <Paragraph text='Si recibiste esta invitación eres una persona que marcó mi vida de alguna 
+        manera, te aprecio y estoy agradecido contigo, espero que yo también pudiera dejar un poco 
+        de mí en tu vida, de forma positiva.'/>
+    <Paragraph text='Si leíste todo lo anterior, gracias por querer saber de mí, quizas interesarte 
+        o preocuparte, y gracias por lo que seguramente has hecho por mí, aunque fuera tan sólo 
+        una buena conversación o una sonrisa.'/>
+    <Paragraph text='Amo a mi familia, con muchos seguro no hablo desde hace un largo tiempo pero 
+        me emocina saber de sus éxitos y alegrías, así como me hace sentir triste y con nostalgia 
+        cualquier agonía.'/>
+    <Paragraph text='Si tienes más de dos años sin saber de mí te comento que soy un hombre 
+        diferente. Mi corazón está abiero para dar y recibir amor. Espero poder verte pronto.'/>
 </BasicContainer>
 
 <style lang="scss">
