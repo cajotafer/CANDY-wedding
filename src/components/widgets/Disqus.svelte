@@ -24,6 +24,8 @@
 
 <style lang="scss">
   .container {
+    padding: 15vh 40px;
+    height: auto;
     width: 100%;
     max-width: 480px;
   }
