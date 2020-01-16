@@ -5,7 +5,7 @@
     import Button from './Button.svelte'
     import P from './Paragraph.svelte'
 
-    let date = new Date(Date.UTC(2020, 1, 2, 1))
+    let date = new Date(Date.UTC(2020, 1, 2, 0))
     let currentDate = new Date()
 
     if (date.getTime() > currentDate.getTime()) {

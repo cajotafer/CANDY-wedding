@@ -13,10 +13,8 @@
 
 <BasicContainer main>
     <Subtitle text='Closer in Paris' primaryFont/>
-    <Paragraph text='Yo vivía en La Guaira junto a mis tíos Chuchú y Fátima. 
-        Trabajaba en INCAFERCA y estudiaba Administración Tributaria en el IUTIRLA.'
-    />
-    <Paragraph text='Esto sucedía hace dos años y unos pocos meses. Tenía un pasatiempo 
+    <Paragraph text='Esto sucedía hace dos años y unos pocos meses. 
+        Vivía en La Guaira junto a mis tíos, trabajaba y estudiaba. Tenía un pasatiempo 
         que viene por defecto en mi familia, cantar. Encontré una aplicación llamada 
         Smule, realmente ni recuerdo como llegué a ella. Básicamente te permite cantar 
         sólo o acompañado de personas al rededor del mundo casi cualquier canción en 

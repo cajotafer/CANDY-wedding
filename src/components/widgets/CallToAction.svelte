@@ -66,7 +66,7 @@
     exclusivo para familiares y amigos.
     <br />
     <br />08:00 PM - Perú / Colombia / Ecuador <br />09:00 PM - Venezuela
-    <br />02:00 AM - España
+    <br />02:00 AM - España <br />https://candy-boda.netlify.com/
   </span>
   <span class="location" hidden>Gresik, East Java, Indonesia</span>
 </div>
