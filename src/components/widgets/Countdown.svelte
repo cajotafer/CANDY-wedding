@@ -50,6 +50,7 @@
     <h3 class="primary-font">Faltan</h3>
     <h2>{daysLeft()}<small>D</small> : {hoursLeft()}<small>H</small> :
         {minutesLeft(currentDate)}<small>M</small></h2>
+    <P text="Aquí podrás ver el enlace a la transmisión en vivo el mismo día de la boda." center/>
     <div class="btn-container">
         <Button text="Libro de visitas" href="/comentarios" />
     </div>
