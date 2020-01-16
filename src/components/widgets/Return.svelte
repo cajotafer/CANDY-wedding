@@ -1,5 +1,8 @@
 <script>
+  import { fly } from "svelte/transition";
+  import { quintOut } from "svelte/easing";
   import Button from "./Button.svelte";
+
   let text = "Regresar";
   let scrollY = 0;
   let scrollAux = 0;
@@ -20,7 +23,13 @@
 </script>
 <svelte:window on:scroll|stopPropagation="{handler}" bind:scrollY="{scrollY}" />
 
-<a href="/" class="return call-to-action" tabindex="0">{text}</a>
+<a
+  href="/"
+  class="return call-to-action"
+  tabindex="0"
+  in:fly="{{delay: 500, duration: 1000, y: 50, opacity: 0, easing: quintOut}}"
+  >{text}</a
+>
 
 <style lang="scss">
   @import "../../css/colors.scss";

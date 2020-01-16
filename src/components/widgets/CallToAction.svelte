@@ -1,4 +1,6 @@
 <script>
+  import { fly } from "svelte/transition";
+  import { quintOut } from "svelte/easing";
   import { itsTime, addedToCalendar } from "../../js/utils/stores.js";
   import Button from "./Button.svelte";
 
@@ -35,16 +37,24 @@
   tabindex="0"
   target="_blank"
   rel="noreferrer noopener"
+  in:fly="{{delay: 500, duration: 1000, y: 50, opacity: 0, easing: quintOut}}"
   >Ver la transmisión en directo</a
 >
 {:else if $addedToCalendar}
-<a href="/comentarios" class="call-to-action" tabindex="0">Libro de visitas</a>
+<a
+  href="/comentarios"
+  class="call-to-action"
+  tabindex="0"
+  in:fly="{{delay: 500, duration: 1000, y: 50, opacity: 0, easing: quintOut}}"
+  >Libro de visitas</a
+>
 {:else}
 <div
   title="Agregar al Calendario"
   class="addeventatc"
   role="button"
   data-dropdown-y="up"
+  in:fly="{{delay: 500, duration: 1000, y: 50, opacity: 0, easing: quintOut}}"
 >
   Agregar al Calendario
   <span class="start" hidden>02/01/2020 08:00 PM</span>
