@@ -1,7 +1,7 @@
 <script>
     import Shadows from '../widgets/Shadows.svelte'
     import Title from '../widgets/Title.svelte'
-    import Fullview from '../layouts/Fullview.svelte'
+    import BasicContainer from '../layouts/BasicContainer.svelte'
     import Disqus from '../widgets/Disqus.svelte'
     import Return from '../widgets/Return.svelte'
     // import Form from '../widgets/Form.svelte'
@@ -11,10 +11,10 @@
 <Title text='Libro de visitas' />
 <Return />
 
-<Fullview main>
+<BasicContainer main>
     <Disqus />
     <!-- <Form /> -->
-</Fullview>
+</BasicContainer>
 
 <style lang="scss">
 
