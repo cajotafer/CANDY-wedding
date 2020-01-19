@@ -98,7 +98,7 @@
 
     <Subtitle text='Primera base' primaryFont/>
     <Paragraph text='El plan era claro:'/>
-    <Paragraph text='1. Conseguir residencia temporal en algún país de latino.'/>
+    <Paragraph text='1. Conseguir residencia temporal en algún país de América Latina.'/>
     <Paragraph text='2. Abrir una cuenta bancaria propia fuera de Venezuela.'/>
     <Paragraph text='3. Mejorar mis ingresos para que se acomodaran a la planificación que teníamos 
         para los próximos años.'/>
@@ -129,7 +129,7 @@
     <Subtitle text='Hermandad' primaryFont/>
     <Paragraph text='Perú fue un lugar lleno de buenas sorpresas. Desde el momento en el que 
         llegué me sentí rodeado de buenas personas, protegido y acompañado, parte de una familia. 
-        Mi prima tuve la amabilidad de buscarme al aeropuerto que realmente no estaba nada cerca 
+        Mi prima tuvo la amabilidad de buscarme al aeropuerto que realmente no estaba nada cerca 
         de nuestro destino. Conocer a los chicos que vivían en el apartamento fue muy agradable 
         desde el primer momento me hicieron sentir en casa y se notaba a leguas el corazón grandote 
         que tienen, ese tipo de cosas no se puede ocultar.'/>
