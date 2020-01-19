@@ -5,6 +5,7 @@
     import Subtitle from '../widgets/Subtitle.svelte'
     import Paragraph from '../widgets/Paragraph.svelte'
     import Return from '../widgets/Return.svelte'
+    import Button from '../widgets/Button.svelte'
 </script>
 
 <Shadows />
@@ -213,6 +214,7 @@
         cualquier agonía.'/>
     <Paragraph text='Si tienes más de dos años sin saber de mí te comento que soy un hombre 
         diferente. Mi corazón está abiero para dar y recibir amor. Espero poder verte pronto.'/>
+        <Button text="Escribe en el libro de visitas" href="/comentarios" />
 </BasicContainer>
 
 <style lang="scss">
