@@ -19,12 +19,12 @@
 <Fullview main>
 	<Hero />
 </Fullview>
-<Fullview section>
+<BasicContainer section>
 	<Countdown />
-</Fullview>
-<Fullview section>
+</BasicContainer>
+<BasicContainer section>
 	<Resume />
-</Fullview>
+</BasicContainer>
 <BasicContainer section>
 	<Links />
 </BasicContainer>

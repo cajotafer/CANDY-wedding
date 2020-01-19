@@ -50,9 +50,9 @@
     <h3 class="primary-font">Faltan</h3>
     <h2>{daysLeft()}<small>D</small> : {hoursLeft()}<small>H</small> :
         {minutesLeft(currentDate)}<small>M</small></h2>
-    <P text="Aquí podrás ver el enlace a la transmisión en vivo el mismo día de la boda." center/>
+    <P text="Aquí podrás ver la transmisión en vivo el mismo día de la boda <i>(en América será el 01/02/2020 en la noche)</i>." center/>
     <div class="btn-container">
-        <Button text="Libro de visitas" href="/comentarios" />
+        <Button text="Transmisión en vivo" disabled/>
     </div>
 {/if}
 
