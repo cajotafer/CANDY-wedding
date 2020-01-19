@@ -42,11 +42,11 @@
 >
 {:else if $addedToCalendar}
 <a
-  href="/comentarios"
+  href="/historia"
   class="call-to-action"
   tabindex="0"
   in:fly="{{delay: 500, duration: 1000, y: 50, opacity: 0, easing: quintOut}}"
-  >Libro de visitas</a
+  >Conoce la historia</a
 >
 {:else}
 <div
