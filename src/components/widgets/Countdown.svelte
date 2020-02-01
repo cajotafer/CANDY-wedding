@@ -43,7 +43,7 @@
     <h3 class="its-time">¡Es la hora!</h3>
     <P text="{`
         Ya puedes ver la
-        <a href="https://youtu.be/ur6Keb67phg" tabindex="0" target="_blank" rel="noreferrer noopener">
+        <a href="https://www.instagram.com/polarchoo/" tabindex="0" target="_blank" rel="noreferrer noopener">
             transmisión en directo.
         </a>`}" center></P>
 {:else}
@@ -52,7 +52,7 @@
         {minutesLeft(currentDate)}<small>M</small></h2>
     <P text="Aquí podrás ver la transmisión en vivo el mismo día de la boda <i>(en América será el 01/02/2020 en la noche)</i>." center/>
     <div class="btn-container">
-        <Button text="Transmisión en vivo" disabled/>
+        <Button href="https://www.instagram.com/polarchoo/" text="Próximamente <b>en vivo<b>"/>
     </div>
 {/if}
 

@@ -5,10 +5,12 @@
 </script>
 
 {#if href && text && !disabled }
-<a {href} class:disabled aria-disabled="{disabled}" tabindex="0">{text}</a>
+<a {href} class:disabled aria-disabled="{disabled}" tabindex="0"
+  >{@html text}</a
+>
 {:else if text}
 <span role="button" class:disabled aria-disabled="{disabled}">
-  {text}
+  {@html text}
 </span>
 {/if}
 

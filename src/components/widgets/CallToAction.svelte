@@ -32,7 +32,7 @@
 
 {#if $itsTime}
 <a
-  href="https://youtu.be/ur6Keb67phg"
+  href="https://www.instagram.com/polarchoo/"
   class="call-to-action"
   tabindex="0"
   target="_blank"
